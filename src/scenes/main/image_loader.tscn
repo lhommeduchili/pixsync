@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://dh44c4je4lde2"]
+
+[ext_resource type="Theme" uid="uid://cnuwfkjdpdtun" path="res://src/resources/theme.tres" id="1_oo31t"]
+
+[node name="ImageLoader" type="FileDialog"]
+process_mode = 3
+title = "Open a File"
+initial_position = 4
+size = Vector2i(360, 360)
+visible = true
+borderless = true
+popup_window = true
+min_size = Vector2i(360, 360)
+theme = ExtResource("1_oo31t")
+ok_button_text = "Open"
+dialog_hide_on_ok = true
+file_mode = 0
+access = 2

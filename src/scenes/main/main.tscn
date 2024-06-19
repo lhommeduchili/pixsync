@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://cfi01xmo3fbkt"]
+
+[ext_resource type="Script" path="res://src/scripts/main/main.gd" id="1_d4bbo"]
+[ext_resource type="Script" path="res://src/scripts/main/program_state_machine.gd" id="2_0xxws"]
+[ext_resource type="Script" path="res://src/scripts/main/running_state.gd" id="4_8vscn"]
+[ext_resource type="Script" path="res://src/scripts/main/paused_state.gd" id="5_mvcwv"]
+[ext_resource type="PackedScene" uid="uid://4bw66tt86nqg" path="res://src/scenes/ui/ui.tscn" id="6_o4c75"]
+
+[node name="pixsync" type="Node"]
+script = ExtResource("1_d4bbo")
+
+[node name="StateMachine" type="Node" parent="."]
+process_mode = 3
+script = ExtResource("2_0xxws")
+
+[node name="Paused" type="Node" parent="StateMachine"]
+script = ExtResource("5_mvcwv")
+
+[node name="Running" type="Node" parent="StateMachine"]
+script = ExtResource("4_8vscn")
+
+[node name="UI" parent="." instance=ExtResource("6_o4c75")]
+process_mode = 3
+running_state_path = NodePath("../StateMachine/Running")
+paused_state_path = NodePath("../StateMachine/Paused")

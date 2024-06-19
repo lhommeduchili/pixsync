@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfcpdyuwwcrkq"]
+
+[ext_resource type="Theme" uid="uid://cnuwfkjdpdtun" path="res://src/resources/theme.tres" id="1_j8sgm"]
+[ext_resource type="Script" path="res://src/scripts/image/image.gd" id="1_oxcli"]
+
+[node name="ImageWindow" type="Window"]
+transparent_bg = true
+title = "pixsync image"
+size = Vector2i(1, 1)
+wrap_controls = true
+unresizable = true
+borderless = true
+always_on_top = true
+content_scale_stretch = 1
+theme = ExtResource("1_j8sgm")
+script = ExtResource("1_oxcli")
+image_texture_rect_path = NodePath("ImageTexture")
+
+[node name="ImageTexture" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+stretch_mode = 2

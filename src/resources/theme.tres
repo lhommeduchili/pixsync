@@ -1,0 +1,166 @@
+[gd_resource type="Theme" load_steps=27 format=3 uid="uid://cnuwfkjdpdtun"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hhtjh"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e8d12"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+bg_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0gah2"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+bg_color = Color(0.823529, 0.270588, 0.576471, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uy0cf"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgre4"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h6c43"]
+bg_color = Color(0.8, 0.8, 0.8, 0)
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5y74f"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o01g6"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rabeg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nkccn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cdxqu"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ow03"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3e4jg"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_on3y3"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pxxte"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a2l8m"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7efyr"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wumyx"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dsrx3"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ui2j8"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qtukc"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_msrf6"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pyatc"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cc2pw"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6brts"]
+bg_color = Color(0.823529, 0.270588, 0.576471, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_30yrw"]
+bg_color = Color(0.823529, 0.270588, 0.576471, 1)
+
+[resource]
+Button/colors/font_color = Color(0.8, 0.8, 0.8, 1)
+Button/colors/font_focus_color = Color(0.8, 0.8, 0.8, 1)
+Button/colors/font_hover_color = Color(0.8, 0.8, 0.8, 1)
+Button/colors/font_hover_pressed_color = Color(0.8, 0.8, 0.8, 1)
+Button/colors/font_outline_color = Color(0.8, 0.8, 0.8, 1)
+Button/colors/font_pressed_color = Color(0.8, 0.8, 0.8, 1)
+Button/colors/icon_focus_color = Color(0.8, 0.8, 0.8, 1)
+Button/colors/icon_hover_color = Color(0.8, 0.8, 0.8, 1)
+Button/colors/icon_hover_pressed_color = Color(0.8, 0.8, 0.8, 1)
+Button/colors/icon_normal_color = Color(0.8, 0.8, 0.8, 1)
+Button/colors/icon_pressed_color = Color(0.8, 0.8, 0.8, 1)
+Button/styles/disabled = SubResource("StyleBoxFlat_hhtjh")
+Button/styles/focus = SubResource("StyleBoxFlat_e8d12")
+Button/styles/hover = SubResource("StyleBoxFlat_0gah2")
+Button/styles/normal = SubResource("StyleBoxFlat_uy0cf")
+Button/styles/pressed = SubResource("StyleBoxFlat_jgre4")
+FileDialog/colors/file_disabled_color = Color(0.8, 0.8, 0.8, 0.25098)
+FileDialog/colors/file_icon_color = Color(0.8, 0.8, 0.8, 1)
+FileDialog/colors/folder_icon_color = Color(0.8, 0.8, 0.8, 1)
+Label/colors/font_color = Color(0.8, 0.8, 0.8, 1)
+Label/colors/font_outline_color = Color(0.8, 0.8, 0.8, 1)
+Label/colors/font_shadow_color = Color(0, 0, 0, 0)
+Label/styles/normal = SubResource("StyleBoxFlat_h6c43")
+Panel/styles/panel = SubResource("StyleBoxFlat_5y74f")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_o01g6")
+PopupDialog/styles/panel = SubResource("StyleBoxFlat_rabeg")
+PopupPanel/styles/panel = SubResource("StyleBoxFlat_nkccn")
+RichTextLabel/colors/default_color = Color(0.8, 0.8, 0.8, 1)
+RichTextLabel/colors/font_outline_color = Color(0.8, 0.8, 0.8, 1)
+TabBar/colors/drop_mark_color = Color(0.8, 0.8, 0.8, 1)
+TabBar/colors/font_disabled_color = Color(0.8, 0.8, 0.8, 0.501961)
+TabBar/colors/font_hovered_color = Color(0.8, 0.8, 0.8, 1)
+TabBar/colors/font_outline_color = Color(0.8, 0.8, 0.8, 1)
+TabBar/colors/font_selected_color = Color(0.8, 0.8, 0.8, 1)
+TabBar/colors/font_unselected_color = Color(0.8, 0.8, 0.8, 0.8)
+TabBar/styles/button_highlight = SubResource("StyleBoxFlat_cdxqu")
+TabBar/styles/button_pressed = SubResource("StyleBoxFlat_6ow03")
+TabBar/styles/tab_disabled = SubResource("StyleBoxFlat_3e4jg")
+TabBar/styles/tab_focus = SubResource("StyleBoxFlat_on3y3")
+TabBar/styles/tab_hovered = SubResource("StyleBoxFlat_pxxte")
+TabBar/styles/tab_selected = SubResource("StyleBoxFlat_a2l8m")
+TabBar/styles/tab_unselected = SubResource("StyleBoxFlat_7efyr")
+TabContainer/colors/drop_mark_color = Color(0.8, 0.8, 0.8, 1)
+TabContainer/colors/font_disabled_color = Color(0.8, 0.8, 0.8, 0.501961)
+TabContainer/colors/font_hovered_color = Color(0.8, 0.8, 0.8, 1)
+TabContainer/colors/font_outline_color = Color(0.8, 0.8, 0.8, 1)
+TabContainer/colors/font_selected_color = Color(0.8, 0.8, 0.8, 1)
+TabContainer/colors/font_unselected_color = Color(0.8, 0.8, 0.8, 0.8)
+TabContainer/styles/panel = SubResource("StyleBoxFlat_wumyx")
+TabContainer/styles/tab_disabled = SubResource("StyleBoxFlat_dsrx3")
+TabContainer/styles/tab_focus = SubResource("StyleBoxFlat_ui2j8")
+TabContainer/styles/tab_hovered = SubResource("StyleBoxFlat_qtukc")
+TabContainer/styles/tab_selected = SubResource("StyleBoxFlat_msrf6")
+TabContainer/styles/tab_unselected = SubResource("StyleBoxFlat_pyatc")
+TabContainer/styles/tabbar_background = SubResource("StyleBoxFlat_cc2pw")
+TextEdit/colors/background_color = Color(0.8, 0.8, 0.8, 0)
+TextEdit/colors/font_color = Color(0.8, 0.8, 0.8, 1)
+TextEdit/colors/font_outline_color = Color(0.8, 0.8, 0.8, 1)
+Window/colors/title_color = Color(0.8, 0.8, 0.8, 1)
+Window/colors/title_outline_modulate = Color(0.8, 0.8, 0.8, 1)
+Window/styles/embedded_border = SubResource("StyleBoxFlat_6brts")
+Window/styles/embedded_unfocused_border = SubResource("StyleBoxFlat_30yrw")

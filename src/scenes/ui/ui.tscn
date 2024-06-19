@@ -1,0 +1,151 @@
+[gd_scene load_steps=4 format=3 uid="uid://4bw66tt86nqg"]
+
+[ext_resource type="Script" path="res://src/scripts/ui/ui.gd" id="1_hores"]
+[ext_resource type="Theme" uid="uid://cnuwfkjdpdtun" path="res://src/resources/theme.tres" id="2_0okmp"]
+[ext_resource type="Texture2D" uid="uid://yqrkse5r5vpl" path="res://assets/image.png" id="3_uqgf8"]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_hores")
+initialize_button_path = NodePath("VBoxContainer/HBoxContainer/initialize")
+start_button_path = NodePath("VBoxContainer/HBoxContainer/start")
+stop_button_path = NodePath("VBoxContainer/HBoxContainer/stop")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_0okmp")
+
+[node name="TabBar" type="TabBar" parent="VBoxContainer"]
+custom_minimum_size = Vector2(640, 320)
+layout_mode = 2
+theme = ExtResource("2_0okmp")
+
+[node name="TabContainer" type="TabContainer" parent="VBoxContainer/TabBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_0okmp")
+all_tabs_in_front = true
+
+[node name="image selection" type="VBoxContainer" parent="VBoxContainer/TabBar/TabContainer"]
+layout_mode = 2
+theme = ExtResource("2_0okmp")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabBar/TabContainer/image selection"]
+layout_mode = 2
+theme = ExtResource("2_0okmp")
+
+[node name="Panel" type="Panel" parent="VBoxContainer/TabBar/TabContainer/image selection/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme = ExtResource("2_0okmp")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/TabBar/TabContainer/image selection/VBoxContainer"]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="VBoxContainer/TabBar/TabContainer/image selection/VBoxContainer/HBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/TabBar/TabContainer/image selection/VBoxContainer/HBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(260, 260)
+layout_mode = 2
+theme = ExtResource("2_0okmp")
+color = Color(0.6, 0.8, 0.8, 1)
+
+[node name="ImageLoader" type="TextureButton" parent="VBoxContainer/TabBar/TabContainer/image selection/VBoxContainer/HBoxContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 26.0
+offset_top = 26.0
+offset_right = 278.0
+offset_bottom = 278.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("3_uqgf8")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Panel2" type="Panel" parent="VBoxContainer/TabBar/TabContainer/image selection/VBoxContainer/HBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+
+[node name="HowToUse" type="RichTextLabel" parent="VBoxContainer/TabBar/TabContainer/image selection/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_0okmp")
+bbcode_enabled = true
+text = "how to use & status..."
+fit_content = true
+
+[node name="Panel3" type="Panel" parent="VBoxContainer/TabBar/TabContainer/image selection/VBoxContainer/HBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+
+[node name="simulation parameters" type="VBoxContainer" parent="VBoxContainer/TabBar/TabContainer"]
+visible = false
+layout_mode = 2
+theme = ExtResource("2_0okmp")
+
+[node name="about" type="VBoxContainer" parent="VBoxContainer/TabBar/TabContainer"]
+visible = false
+layout_mode = 2
+theme = ExtResource("2_0okmp")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/TabBar/TabContainer/about"]
+layout_mode = 2
+theme = ExtResource("2_0okmp")
+text = "made with love by alφ."
+fit_content = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_0okmp")
+alignment = 2
+
+[node name="initialize" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "initialize"
+
+[node name="start" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+disabled = true
+text = "start"
+
+[node name="stop" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+disabled = true
+text = "stop"
+
+[node name="quit" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "quit"
+
+[node name="backgrounds" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="blackBg" type="ColorRect" parent="backgrounds"]
+offset_right = 640.0
+offset_bottom = 360.0
+theme = ExtResource("2_0okmp")
+color = Color(0, 0, 0, 1)
+
+[connection signal="pressed" from="VBoxContainer/TabBar/TabContainer/image selection/VBoxContainer/HBoxContainer/ColorRect/ImageLoader" to="." method="_on_image_loader_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/initialize" to="." method="_on_initialize_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/stop" to="." method="_on_stop_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/quit" to="." method="_on_quit_pressed"]
